@@ -1,0 +1,64 @@
+<header class="topbar">
+  <div class="topbar__brand">
+    <a href="index.html" style="text-decoration:none;">DAN.STUDIO</a>
+  </div>
+
+  <nav class="topbar__nav">
+    <a class="nav__item" href="index.html">HOME</a>
+    <a class="nav__item" href="danh-muc.html">Danh mục.</a>
+    <a class="nav__item" href="about.html">Về chúng tôi.</a>
+    <a class="nav__item" href="contact.html">Liên hệ.</a>
+    <a class="nav__item" href="blog.html">Blog</a>
+  </nav>
+
+  <a class="topbar__user" href="contact.html" aria-label="User">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Z" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M4 22c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </a>
+</header>
+<!doctype html>
+<html>
+<head>...</head>
+<body>
+  HEADER
+  MAIN
+</body>
+</html>
+<main class="container">
+  <section class="section" id="contact">
+    <h1 class="subtitle">Liên hệ.</h1>
+
+    <form class="form" id="contactForm">
+      <label class="field">
+        <span class="field__label">Tên *</span>
+        <input class="field__input" name="name" type="text" required />
+      </label>
+
+      <label class="field">
+        <span class="field__label">Điện thoại *</span>
+        <div class="phone">
+          <span class="phone__flag" title="VN">🇻🇳</span>
+          <input class="field__input phone__input" name="phone" type="tel" required placeholder="VD: 090..." />
+        </div>
+      </label>
+
+      <label class="field">
+        <span class="field__label">Email</span>
+        <input class="field__input" name="email" type="email" placeholder="vd: vttanlucwork@gmail.com" />
+      </label>
+
+      <button class="btn" type="submit">Gửi</button>
+      <p class="hint" id="hint"></p>
+    </form>
+
+    <footer class="footer">
+      <div class="footer__email">vttanluc.work@gmail.com</div>
+      <div class="footer__icons">
+        <a href="#" aria-label="Facebook" class="social">f</a>
+        <a href="#" aria-label="Instagram" class="social">◎</a>
+      </div>
+    </footer>
+  </section>
+</main>
