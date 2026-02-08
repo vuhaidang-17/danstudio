@@ -1,38 +1,141 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DAN.STUDIO</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- TOP BAR -->
+  <header class="topbar" id="top">
+    <div class="topbar__brand">DAN.STUDIO</div>
 
-<header>
-  <h1>DAN.STUDIO</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+    <nav class="topbar__nav">
+      <a class="nav__item nav__item--active" href="#top">HOME</a>
+      <a class="nav__item" href="#projects">Danh mục.</a>
+      <a class="nav__item" href="#about">Về chúng tôi.</a>
+      <a class="nav__item" href="#contact">Liên hệ.</a>
+      <a class="nav__item" href="#blog">Blog</a>
+    </nav>
 
-<section class="hero">
-  <p>✕ DAN STUDIO ✕ DAN STUDIO ✕ DAN STUDIO ✕</p>
-  <h2>Một số dự án</h2>
-  <p>Portfolio cá nhân – web tĩnh deploy bằng VPS</p>
-</section>
+    <a class="topbar__user" href="#contact" aria-label="User">
+      <!-- icon user (SVG) -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M4 22c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </header>
 
-<section class="projects">
-  <div class="card">PHOTO FOODS</div>
-  <div class="card">CERES</div>
-  <div class="card">RELAX MOOD</div>
-</section>
+  <!-- MARQUEE LINE -->
+  <section class="marquee" aria-label="Marquee">
+    <div class="marquee__track">
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+      <span>DAN STUDIO</span><span class="x">✕</span>
+    </div>
+  </section>
 
-<footer>
-  © 2026 DAN.STUDIO
-</footer>
+  <!-- PROJECTS -->
+  <main class="container">
+    <section class="section" id="projects">
+      <h1 class="title">Một số dự án</h1>
+      <p class="lead">
+        Chào mừng đến với hồ sơ của tôi. Tại đây, bạn sẽ tìm thấy tuyển tập công việc của tôi.
+        Khám phá các dự án của tôi để tìm hiểu thêm về những gì tôi làm.
+      </p>
 
-<script src="script.js"></script>
+      <div class="cards">
+        <article class="card">
+          <a class="card__thumb card__thumb--placeholder" href="#" aria-label="Photo Foods"></a>
+          <div class="card__meta">
+            <h3 class="card__name">PHOTO FOODS</h3>
+            <p class="card__desc"></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__thumb card__thumb--placeholder" href="#" aria-label="Chuồn Chuồn Foods"></a>
+          <div class="card__meta">
+            <h3 class="card__name">Chuồn Chuồn Foods</h3>
+            <p class="card__desc"></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__thumb card__thumb--ceres" href="#" aria-label="Ceres"></a>
+          <div class="card__meta">
+            <h3 class="card__name">Ceres</h3>
+            <p class="card__desc">Đây là nơi để mô tả...</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__thumb card__thumb--relax" href="#" aria-label="Relax mood"></a>
+          <div class="card__meta">
+            <h3 class="card__name">Relax mood</h3>
+            <p class="card__desc">Đây là nơi để mô tả...</p>
+          </div>
+        </article>
+      </div>
+
+      <hr class="divider" />
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="subtitle">Về chúng tôi.</h2>
+      <p class="about">
+        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text”
+        or double click me to add your own content and make changes to the font. I'm a great place for
+        you to tell a story.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2 class="subtitle">Liên hệ.</h2>
+
+      <form class="form" id="contactForm">
+        <label class="field">
+          <span class="field__label">Tên *</span>
+          <input class="field__input" name="name" type="text" required />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Điện thoại *</span>
+          <div class="phone">
+            <span class="phone__flag" title="VN">🇻🇳</span>
+            <input class="field__input phone__input" name="phone" type="tel" required placeholder="VD: 090..." />
+          </div>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Email</span>
+          <input class="field__input" name="email" type="email" placeholder="vd: vttanlucwork@gmail.com" />
+        </label>
+
+        <button class="btn" type="submit">Gửi</button>
+        <p class="hint" id="hint"></p>
+      </form>
+
+      <footer class="footer">
+        <div class="footer__email">vttanluc.work@gmail.com</div>
+        <div class="footer__icons">
+          <a href="#" aria-label="Facebook" class="social">f</a>
+          <a href="#" aria-label="Instagram" class="social">◎</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
